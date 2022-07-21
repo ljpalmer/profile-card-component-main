@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--Dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url('../images/bg-pattern-top.svg') , 
+    url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+}
+span{
+    color: var(--Dark-grayish-blue);
+}
+p{ 
+    font-size: 1.5rem;
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 4.6rem; 
+}
+h1{
+    letter-spacing: 0.1rem;
+}
+.container__perfil{
+    text-align: center;
+    margin-top: 7.5rem;    
+}
+main{    
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;    
+}
+
+.container{
+    height: 415px;
+    width: 330px;   
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #fff;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.container__name{
+ /* border-bottom: 0.05rem solid var(--Dark-grayish-blue);   */
+ border-bottom: 1px solid var(--Dark-gray);
+ margin-bottom: 2.2rem;
+}
+.container__background-image{
+    background: url('../images/bg-pattern-card.svg');
+    height: 155px;
+    position: relative;
+}
+.container__background-image img{
+    /* width: 100%;
+    height: 160px; */
+    /* border-radius: 2rem 2rem 0 0; */    
+    position: absolute;
+    top: 87px;
+    left:35%;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+
+}
+.container__social-information{
+    display: flex;
+    justify-content: space-around;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+    font-size: 2rem;
+    
+}
+.container__social-information span{
+    display: block;
+    color: var(--Dark-grayish-blue);
+    font-size: 0.9rem;
+    letter-spacing: 0.5rem;    
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+/* 
+@media screen and (min-width:1440px) {
+    .container{
+        width: 350px;
+    }
+} */
