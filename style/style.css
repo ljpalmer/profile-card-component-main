@@ -99,9 +99,9 @@ main{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-/* 
+
 @media screen and (min-width:1440px) {
     .container{
         width: 350px;
     }
-} */
+}
